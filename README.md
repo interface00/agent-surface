@@ -43,7 +43,7 @@ If you cannot honestly say both, do not ship this.
 ## Install
 
 ```bash
-npm install agent-surface
+npm install @orangestudio/agent-surface
 ```
 
 Or copy the four files. They have no dependencies and no build step, which is
@@ -54,7 +54,7 @@ policy without following an import.
 
 ```js
 // functions/app/[slug].js  (Cloudflare Pages)
-import { createNegotiator } from 'agent-surface/negotiate';
+import { createNegotiator } from '@orangestudio/agent-surface/negotiate';
 
 export const { onRequestGet, onRequestHead } = createNegotiator({
   siteUrl: 'https://example.com',
@@ -66,7 +66,7 @@ export const { onRequestGet, onRequestHead } = createNegotiator({
 Or use the policy directly, in any runtime with `Request`/`Headers`:
 
 ```js
-import { shouldServeMarkdown, classifyAgent, VARY_HEADER } from 'agent-surface';
+import { shouldServeMarkdown, classifyAgent, VARY_HEADER } from '@orangestudio/agent-surface';
 
 classifyAgent('Mozilla/5.0 (compatible; Googlebot/2.1)');   // 'index-crawler'
 classifyAgent('Mozilla/5.0 (compatible; ClaudeBot/1.0)');   // 'llm-agent'

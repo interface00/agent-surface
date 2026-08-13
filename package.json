@@ -1,15 +1,33 @@
 {
-  "name": "agent-surface",
+  "name": "@orangestudio/agent-surface",
   "version": "0.1.0",
   "description": "Serve Markdown to AI readers and HTML to ranking crawlers without cloaking, then measure whether any of them actually came.",
   "type": "module",
   "license": "MIT",
-  "engines": { "node": ">=18" },
+  "author": "Orange Studio (SHOEDOG INC) <hello@orangeai.co.kr> (https://orangeai.co.kr)",
+  "homepage": "https://github.com/interface00/agent-surface#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/interface00/agent-surface.git"
+  },
+  "bugs": {
+    "url": "https://github.com/interface00/agent-surface/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
   "exports": {
     ".": "./src/agents.mjs",
     "./negotiate": "./src/negotiate.mjs"
   },
-  "files": ["src", "scripts", "examples", "README.md", "AGENTS.md", "LICENSE"],
+  "files": [
+    "src",
+    "scripts",
+    "examples",
+    "README.md",
+    "AGENTS.md",
+    "LICENSE"
+  ],
   "scripts": {
     "test": "node --test test/*.test.mjs",
     "indexnow": "node scripts/indexnow.mjs",
@@ -17,9 +35,22 @@
     "ai:crawlers": "node scripts/ai-crawlers.mjs"
   },
   "keywords": [
-    "llm", "ai-crawler", "gptbot", "claudebot", "perplexity",
-    "content-negotiation", "markdown", "geo", "aeo",
-    "indexnow", "search-console", "cloudflare-pages", "seo"
+    "llm",
+    "ai-crawler",
+    "gptbot",
+    "claudebot",
+    "perplexity",
+    "content-negotiation",
+    "markdown",
+    "geo",
+    "aeo",
+    "indexnow",
+    "search-console",
+    "cloudflare-pages",
+    "seo"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {}
 }

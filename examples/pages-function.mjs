@@ -11,7 +11,7 @@
  * Markdown drifts from the HTML and that is how content negotiation quietly
  * turns into cloaking.
  */
-import { createNegotiator } from 'agent-surface/negotiate';
+import { createNegotiator } from '@orangestudio/agent-surface/negotiate';
 
 const { onRequestGet, onRequestHead } = createNegotiator({
   siteUrl: 'https://example.com',
