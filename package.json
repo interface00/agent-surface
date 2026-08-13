@@ -1,5 +1,5 @@
 {
-  "name": "@orangestudio/agent-surface",
+  "name": "@orangestudio-npm/agent-surface",
   "version": "0.1.0",
   "description": "Serve Markdown to AI readers and HTML to ranking crawlers without cloaking, then measure whether any of them actually came.",
   "type": "module",
